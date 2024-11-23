@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "Updater": {
+      "commandName": "Project",
+      "workingDirectory": "C:\\Users\\alexa\\AppData\\Roaming\\Autodesk\\Revit\\Addins\\2022"
+    }
+  }
+}
