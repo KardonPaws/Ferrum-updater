@@ -20,14 +20,14 @@ class UpdaterProgram
         {
             process.WaitForExit();
         }
-        MessageBox((IntPtr)0, "Обновление начато", "Железно", 0);
-        var fileName = "FerrumAddin.dll";
+        var fileName = "FerrumAddinDev.dll";
         string downloadDir = Path.GetDirectoryName(Process.GetCurrentProcess().MainModule.FileName);
         var localPath = Path.Combine(downloadDir, fileName);
 
         var tempPath = Path.Combine(downloadDir, "new" + fileName);
         if (File.Exists(tempPath))
         {
+            MessageBox((IntPtr)0, "Обновление начато", "Железно", 0);
             File.Delete(localPath);
             File.Move(tempPath, localPath);
             Console.WriteLine($"{fileName} был обновлен.");
